@@ -16,7 +16,7 @@ import coil.compose.AsyncImage
 
 @Composable
 fun ProfileInformation(
-    ImageUrl: String,
+    imageUrl: String,
     posts: Int,
     followers: Int,
     following:  Int,
@@ -28,12 +28,10 @@ fun ProfileInformation(
         horizontalArrangement = Arrangement.SpaceAround
     ) {
         AsyncImage(
-            model = ImageUrl,
+            model = imageUrl,
             contentDescription = "profile image",
             modifier = Modifier.clip(CircleShape)
-
         )
-
         ProfileInFormationItem(posts,"Publicaciones")
         ProfileInFormationItem(followers, "Seguidores")
         ProfileInFormationItem(following, "sequidos")

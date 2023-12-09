@@ -12,7 +12,6 @@ import androidx.compose.ui.tooling.preview.Preview
 fun ProfileDescription(
     name: String,
     description: String,
-
     modifier: Modifier = Modifier
 ) {
     Column(modifier = modifier.fillMaxWidth()) {
